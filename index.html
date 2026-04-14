@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Developer</title>
 
-    <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- HEADER -->
 <header>
     <h2 class="logo">Dev<span>.</span></h2>
 
@@ -20,50 +17,76 @@
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Project</a></li>
+            <li><a href="#experience">Experience</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <div class="right-menu">
+        <button id="darkModeToggle">🌙</button>
+        <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="fade-in">
-    <h1>Halo gays<span>Developer</span></h1>
-    <p>Membangun website modern, cepat, dan interaktif</p>
+    <h1>Halo, Saya <span>Web Developer</span></h1>
+    <p>Membuat website modern, cepat, dan menarik</p>
     <button onclick="scrollToSection('projects')">Lihat Project</button>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="fade-in">
     <h2>Tentang Saya</h2>
-    <p>
-        Saya adalah web developer yang fokus pada pembuatan website modern,
-        responsive, dan user-friendly.
-    </p>
+    <p>Saya fokus pada frontend & backend development dengan pengalaman membuat website profesional.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="fade-in">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="progress html"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="progress css"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div class="progress js"></div></div>
+    </div>
 </section>
 
 <!-- PROJECT -->
 <section id="projects" class="fade-in">
-    <h2>Project Saya</h2>
+    <h2>Project</h2>
 
     <div class="project-container">
         <div class="card">
+            <img src="images/project1.jpg">
             <h3>Website Toko</h3>
-            <p>Website e-commerce sederhana</p>
+            <a href="#">Lihat</a>
         </div>
 
         <div class="card">
+            <img src="images/project2.jpg">
             <h3>Portfolio</h3>
-            <p>Website modern</p>
-        </div>
-
-        <div class="card">
-            <h3>Landing Page</h3>
-            <p>Landing page bisnis</p>
+            <a href="#">Lihat</a>
         </div>
     </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="fade-in">
+    <h2>Pengalaman</h2>
+    <p>Freelance Web Developer (2024 - Sekarang)</p>
+    <p>Mengerjakan berbagai project website client</p>
 </section>
 
 <!-- CONTACT -->
@@ -72,14 +95,13 @@
     <form id="contactForm">
         <input type="text" placeholder="Nama" required>
         <input type="email" placeholder="Email" required>
-        <textarea placeholder="Pesan" required></textarea>
+        <textarea placeholder="Pesan"></textarea>
         <button type="submit">Kirim</button>
     </form>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 Portfolio Developer</p>
+    <p>© 2026 Portfolio</p>
 </footer>
 
 <script src="js/scripts.js"></script>
