@@ -1,20 +1,23 @@
 :root {
     --primary: #3b82f6;
-    --bg: #f9fafb;
+    --accent: #22c55e;
+    --bg: linear-gradient(135deg, #3b82f6, #6366f1);
+    --card: #ffffff;
     --text: #1f2937;
 }
 
-/* DARK MODE */
-body.dark {
-    --bg: #0f172a;
-    --text: #f1f5f9;
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* BASE */
+/* BODY */
 body {
     font-family: 'Poppins', sans-serif;
     background: var(--bg);
-    color: var(--text);
+    color: white;
 }
 
 /* HEADER */
@@ -22,41 +25,56 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background: white;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
 }
 
-body.dark header {
-    background: #1e293b;
+.logo {
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 /* HERO */
 #home {
     text-align: center;
-    padding: 100px 20px;
+    padding: 120px 20px;
 }
 
-/* SKILLS */
-.skill {
+#home h1 span {
+    color: #22c55e;
+}
+
+/* SECTION */
+section {
+    background: var(--card);
+    color: var(--text);
     margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
 }
 
-.bar {
-    background: #ddd;
-    height: 10px;
+/* CARD */
+.card {
+    background: white;
+    padding: 20px;
     border-radius: 10px;
+    transition: 0.3s;
 }
 
-.progress {
-    height: 10px;
-    border-radius: 10px;
-    background: var(--primary);
+.card:hover {
+    transform: scale(1.05);
 }
 
-.html { width: 90%; }
-.css { width: 85%; }
-.js { width: 80%; }
+/* BUTTON */
+button {
+    background: #22c55e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+}
 
-/* PROJECT */
+/* PROJECT GRID */
 .project-container {
     display: flex;
     gap: 20px;
@@ -64,43 +82,9 @@ body.dark header {
     justify-content: center;
 }
 
-.card {
-    width: 250px;
-    background: white;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-body.dark .card {
-    background: #1e293b;
-}
-
-.card img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* BUTTON */
-button {
-    background: var(--primary);
-    color: white;
-    border: none;
-    padding: 10px;
-}
-
-/* ANIMASI */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-}
-
-.fade-in.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 /* RESPONSIVE */
 @media(max-width:768px){
-    nav { display:none; }
-    nav.active { display:block; }
+    section {
+        margin: 10px;
+    }
 }
