@@ -3,51 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TemanKita</title>
+    <title>Portfolio Developer</title>
 
     <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
 <!-- HEADER -->
 <header>
-    <div class="logo">
-        <img src="images/logo.png" alt="logo">
-        <span>TemanKita</span>
-    </div>
+    <h2 class="logo">Dev<span>.</span></h2>
 
     <nav id="nav">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#about">Tentang</a></li>
-            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- Hamburger -->
-    <div class="menu-toggle" id="menu-toggle">
-        ☰
-    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
 </header>
 
 <!-- HERO -->
 <section id="home" class="fade-in">
-    <h1>Selamat Datang 👋</h1>
-    <p>Platform sederhana untuk berbagi dengan teman sekitar</p>
-    <button onclick="scrollToSection('contact')">Hubungi Kami</button>
+    <h1>Halo, Saya <span>Developer</span></h1>
+    <p>Membangun website modern, cepat, dan interaktif</p>
+    <button onclick="scrollToSection('projects')">Lihat Project</button>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="fade-in">
-    <h2>Tentang</h2>
+    <h2>Tentang Saya</h2>
     <p>
-        Website ini dibuat untuk menghubungkan teman-teman di sekitar kita.
-        Desain clean, cepat, dan mudah digunakan.
+        Saya adalah web developer yang fokus pada pembuatan website modern,
+        responsive, dan user-friendly.
     </p>
+</section>
+
+<!-- PROJECT -->
+<section id="projects" class="fade-in">
+    <h2>Project Saya</h2>
+
+    <div class="project-container">
+        <div class="card">
+            <h3>Website Toko</h3>
+            <p>Website e-commerce sederhana</p>
+        </div>
+
+        <div class="card">
+            <h3>Portfolio</h3>
+            <p>Website pribadi modern</p>
+        </div>
+
+        <div class="card">
+            <h3>Landing Page</h3>
+            <p>Landing page bisnis</p>
+        </div>
+    </div>
 </section>
 
 <!-- CONTACT -->
@@ -55,6 +71,7 @@
     <h2>Kontak</h2>
     <form id="contactForm">
         <input type="text" placeholder="Nama" required>
+        <input type="email" placeholder="Email" required>
         <textarea placeholder="Pesan" required></textarea>
         <button type="submit">Kirim</button>
     </form>
@@ -62,7 +79,7 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2026 TemanKita</p>
+    <p>© 2026 Portfolio Developer</p>
 </footer>
 
 <script src="js/scripts.js"></script>
