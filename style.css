@@ -29,7 +29,7 @@ header {
 }
 
 .logo span {
-    color: var(--primary);
+    color: red;
 }
 
 /* NAV */
